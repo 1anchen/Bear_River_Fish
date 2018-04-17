@@ -30,4 +30,9 @@ end
    assert_equal(result,answer)
  end
 
+ def test_roar
+   answer = @bear.roar()
+   result = "Roar..."
+   assert_equal(result,answer)
+ end
 end
