@@ -16,7 +16,7 @@ class BearTest < MiniTest::Test
    assert_equal(result,answer)
  end
 
-def test_bear_can_access_fish_in_river__fish_Flash
+def test_bear_can_access_fish_in_river
     answer = @river.amount_of_fish[0]
     result = "Flash"
     assert_equal(result,answer)

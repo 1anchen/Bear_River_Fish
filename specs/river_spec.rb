@@ -8,12 +8,21 @@ class RiverTest < MiniTest::Test
 
   def setup
     @river = River.new
+    @fish = Fish.new("Nemo")
   end
 
   def test_how_many_fish_in_river
     answer = @river.how_many_fish_in_river
     result = 3
     assert_equal(result,answer)
+  end
+
+  def test_add_fish
+    @river.add_fish(@fish.name)
+    answer = @river.how_many_fish_in_river
+    result = 4
+    assert_equal(result,answer)
+
   end
 
   def test_lose_fish

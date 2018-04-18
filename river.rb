@@ -11,6 +11,10 @@ class River
      return @amount_of_fish.length
   end
 
+  def add_fish(fish)
+    @amount_of_fish.push(fish)
+  end
+
   def lose_fish
     @amount_of_fish.delete_at(1)
   end
